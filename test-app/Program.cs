@@ -46,7 +46,6 @@ app.Map("/login", (string email, string password) =>
 app.UseCors(builder => builder.WithOrigins("http://localhost:4200", "https://asbelov2.github.io/").AllowAnyMethod().AllowAnyHeader());
 app.UseAuthentication();
 app.UseAuthorization();
-//app.MapControllers();
 
 app.MapUserEndpoints();
 
